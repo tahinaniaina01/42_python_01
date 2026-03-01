@@ -4,12 +4,13 @@
 #                                                          :::      ::::::::  #
 #   ft_garden_intro.py                                   :+:      :+:    :+:  #
 #                                                      +:+ +:+         +:+    #
-#   By: trakotos <trakotos@42antananarivo.mg>        +#+  +:+       +#+       #
+#   By: trakotos <trakotos@student.42antananarivo.   +#+  +:+       +#+       #
 #                                                  +#+#+#+#+#+   +#+          #
-#   Created: 2026/03/01 17:13:48 by trakotos            #+#    #+#            #
-#   Updated: 2026/03/01 17:13:57 by trakotos           ###   ########.fr      #
+#   Created: 2026/03/01 17:27:44 by trakotos            #+#    #+#            #
+#   Updated: 2026/03/01 17:27:47 by trakotos           ###   ########.fr      #
 #                                                                             #
 # ########################################################################### #
+
 
 if __name__ == "__main__":
     name = "Rose"
