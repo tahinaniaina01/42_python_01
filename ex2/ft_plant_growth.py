@@ -7,9 +7,10 @@
 #   By: trakotos <trakotos@student.42antananarivo.   +#+  +:+       +#+       #
 #                                                  +#+#+#+#+#+   +#+          #
 #   Created: 2026/03/06 10:33:30 by trakotos            #+#    #+#            #
-#   Updated: 2026/03/06 10:45:27 by trakotos           ###   ########.fr      #
+#   Updated: 2026/03/06 10:57:00 by trakotos           ###   ########.fr      #
 #                                                                             #
 # ########################################################################### #
+
 
 class Plant:
     def __init__(self, name: str, height: int, age: int):
@@ -20,7 +21,7 @@ class Plant:
 
     def print_info(self):
         print(f"{self.__name}: {self.__height}cm, {self.__age} days old")
-    
+
     def grow(self):
         self.__grow += 1
         self.__height += 1
@@ -30,6 +31,7 @@ class Plant:
 
     def get_info(self):
         return (self.__name, self.__height, self.__age, self.__grow)
+
 
 if __name__ == "__main__":
     plant = Plant("Rose", 25, 30)
@@ -42,5 +44,5 @@ if __name__ == "__main__":
         plant.grow()
     print(f"=== Day {days} ===")
     plant.print_info()
-    _,_,_,grow = plant.get_info()
+    _, _, _, grow = plant.get_info()
     print(f"Growth this week: +{grow}cm")
