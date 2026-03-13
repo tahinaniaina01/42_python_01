@@ -14,57 +14,57 @@
 
 class Plant:
     def __init__(self, name: str, height: int, age: int):
-        self._name = name
-        self._height = height
-        self._age = age
+        self.name = name
+        self.height = height
+        self.age = age
 
 
 class Flower(Plant):
     def __init__(self, name, height, age, color):
         super().__init__(name, height, age)
-        self._color = color
-        self._is_bloom = False
+        self.color = color
+        self.is_bloom = False
 
     def print_info(self):
         print(
-            f"{self._name} (Flower): {self._height}cm, "
-            f"{self._age} days, {self._color} color"
+            f"{self.name} (Flower): {self.height}cm, "
+            f"{self.age} days, {self.color} color"
         )
 
     def bloom(self):
-        self._is_bloom = True
-        print(f"{self._name} is blooming beautifully!")
+        self.is_bloom = True
+        print(f"{self.name} is blooming beautifully!")
 
 
 class Tree(Plant):
     def __init__(self, name, height, age, trunk_diameter):
         super().__init__(name, height, age)
-        self._trunk_diameter = trunk_diameter
-        self._shade = None
+        self.trunk_diameter = trunk_diameter
+        self.shade = None
 
     def print_info(self):
         print(
-            f"{self._name} (Tree): {self._height}cm, "
-            f"{self._age} days, {self._trunk_diameter}cm diameter"
+            f"{self.name} (Tree): {self.height}cm, "
+            f"{self.age} days, {self.trunk_diameter}cm diameter"
         )
 
     def produce_shade(self, shade: int):
-        self._shade = shade
-        print(f"Oak provides {self._shade} square meters of shade")
+        self.shade = shade
+        print(f"Oak provides {self.shade} square meters of shade")
 
 
 class Vegetable(Plant):
     def __init__(self, name, height, age, harvest_season, nutritional_value):
         super().__init__(name, height, age)
-        self._harvest_season = harvest_season
-        self._nutritional_value = nutritional_value
+        self.harvest_season = harvest_season
+        self.nutritional_value = nutritional_value
 
     def print_info(self):
         print(
-            f"{self._name} (Vegetable): {self._height}cm, "
-            f"{self._age} days, {self._harvest_season} harvest"
+            f"{self.name} (Vegetable): {self.height}cm, "
+            f"{self.age} days, {self.harvest_season} harvest"
         )
-        print(f"Tomato is rich in {self._nutritional_value}")
+        print(f"Tomato is rich in {self.nutritional_value}")
 
 
 if __name__ == "__main__":
