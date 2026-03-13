@@ -27,7 +27,8 @@ class Flower(Plant):
 
     def print_info(self):
         print(
-            f"{self._name} (Flower): {self._height}cm, {self._age} days, {self._color} color"
+            f"{self._name} (Flower): {self._height}cm, "
+            f"{self._age} days, {self._color} color"
         )
 
     def bloom(self):
@@ -43,7 +44,8 @@ class Tree(Plant):
 
     def print_info(self):
         print(
-            f"{self._name} (Tree): {self._height}cm, {self._age} days, {self._trunk_diameter}cm diameter"
+            f"{self._name} (Tree): {self._height}cm, "
+            f"{self._age} days, {self._trunk_diameter}cm diameter"
         )
 
     def produce_shade(self, shade: int):
@@ -59,7 +61,8 @@ class Vegetable(Plant):
 
     def print_info(self):
         print(
-            f"{self._name} (Vegetable): {self._height}cm, {self._age} days, {self._harvest_season} harvest"
+            f"{self._name} (Vegetable): {self._height}cm, "
+            f"{self._age} days, {self._harvest_season} harvest"
         )
         print(f"Tomato is rich in {self._nutritional_value}")
 

@@ -27,7 +27,7 @@ class Plant:
             print(f"Height updated: {self.__height}cm [OK]")
         else:
             print(f"Invalid operation attempted: height {height}cm [REJECTED]")
-            print(f"Security: Negative height rejected")
+            print("Security: Negative height rejected")
 
     def set_age(self, age: int) -> None:
         if age >= 0:
@@ -35,7 +35,7 @@ class Plant:
             print(f"Age updated: {self.__age} days [OK]")
         else:
             print(f"Invalid operation attempted: age {age}cm [REJECTED]")
-            print(f"Security: Negative age rejected")
+            print("Security: Negative age rejected")
 
     def get_height(self) -> int:
         return self.__height
@@ -50,4 +50,7 @@ if __name__ == "__main__":
     print()
     plant.set_height(-5)
     print()
-    print(f"Current plant: Rose ({plant.get_height()}cm, {plant.get_age()} days)")
+    print(
+        f"Current plant: Rose ({plant.get_height()}cm, "
+        f"{plant.get_age()} days)"
+    )
